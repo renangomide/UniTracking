@@ -53,3 +53,45 @@ yarn dev
 
 O projeto será executado em modo de desenvolvimento. Abra o navegador e acesse http://localhost:3000 para visualizar a aplicação.
 
+4. Configuração do Back-end
+Instalar o ambiente virtual do Python
+No diretório do projeto, crie um ambiente virtual para o Python:
+```bash
+python -m venv venv
+```
+Ative o ambiente virtual:
+ Windows: 
+```bash
+venv\Scripts\activate
+```
+Mac/Linux:
+```bash
+source venv/bin/activate
+```
+Instalar as dependências do Flask
+Com o ambiente virtual ativo, instale as dependências do Flask utilizando o pip:
+```bash
+pip install -r requirements.txt
+```
+Rodar o servidor Flask
+Após instalar as dependências, inicie o servidor Flask com o comando:
+
+```bash
+flask run
+```
+O servidor Flask rodará em http://localhost:5000.
+
+5. Acessar a Aplicação
+Com ambos os servidores (front-end e back-end) rodando, acesse o projeto através do navegador em http://localhost:3000.
+
+Comandos Úteis:
+-npm run dev / yarn dev: Inicia o servidor de desenvolvimento do Next.js.
+-flask run: Inicia o servidor do Flask.
+-npm install / yarn install: Instala as dependências do Node.js.
+-pip install -r requirements.txt: Instala as dependências do Python.
+Tecnologias Utilizadas:
+-Next.js para o front-end.
+-Flask para o back-end.
+-TypeScript para o front-end.
+-Python no back-end.
+
