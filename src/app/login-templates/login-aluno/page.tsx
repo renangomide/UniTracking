@@ -1,5 +1,5 @@
-// pages/login-aluno.tsx
 import Button from "@/components/button/button";
+import Link from "next/link";
 
 const LoginAluno = () => {
   return (
@@ -38,7 +38,9 @@ const LoginAluno = () => {
             />
           </div>
           <div className="flex justify-center">
-            <Button title="Login" bgColor="#4CAF50" />
+            <Link href="/Aluno/Home">
+              <Button title="Login" bgColor="#4CAF50" />
+            </Link>
           </div>
         </form>
       </div>

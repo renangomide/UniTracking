@@ -1,13 +1,10 @@
 "use client";
-import React, { useState } from "react";
-import Navbar from "@/components/navbar/navbar";
-import Title from "@/components/title/title";
 import Link from "next/link";
-import Button from "@/components/button/button";
-import { professor } from "@/app/mockData/Professor";
+import React, { useState } from "react";
 import { IoIosNotifications } from "react-icons/io";
+import { aluno } from "@/app/mockData/Aluno";
 
-const ProfessorHome = () => {
+const AlunoHome = () => {
   const [isNotificationVisible, setIsNotificationVisible] = useState(false);
 
   const handleNotificationClick = () => {
@@ -20,11 +17,12 @@ const ProfessorHome = () => {
         <div className="container mx-auto flex justify-center items-center">
           <ul className="flex space-x-16">
             <li>
-              <Link href="/Professor/Home">Home</Link>
+              <Link href="/Aluno/Home">Home</Link>
             </li>
             <li>
-              <Link href="/Professor/Turmas">Turmas</Link>
+              <Link href="/Aluno/Turmas">Turmas</Link>
             </li>
+            {/* Botao de notificacao */}
             <button
               onClick={handleNotificationClick}
               className="text-white text-2xl"
@@ -36,8 +34,9 @@ const ProfessorHome = () => {
       </nav>
       <main className="bg-[#7696D0] min-h-screen flex flex-col items-center justify-center">
         <h1 className="text-3xl font-bold text-white mb-8">
-          {"Seja bem vindo de volta " + professor.nome}
+          {"Seja bem vindo de volta " + aluno.nome}
         </h1>
+        {/* Card de Notificacao */}
         {isNotificationVisible && (
           <div
             className="fixed top-0 left-0 w-full h-screen bg-gray-800 bg-opacity-50 flex justify-center items-center"
@@ -47,8 +46,8 @@ const ProfessorHome = () => {
               <h2 className="text-center text-lg font-semibold">
                 Notificações
               </h2>
-              {/* conteudo de notificacao sera adicionado aqui apos integracao com o backend */}
-              <p>Voce nao poosui notificacoes...</p>
+              {/*Conteudo da notificacao inserir aqui*/}
+              <p>Voce não tem notificações...</p>
             </div>
           </div>
         )}
@@ -57,4 +56,4 @@ const ProfessorHome = () => {
   );
 };
 
-export default ProfessorHome;
+export default AlunoHome;
