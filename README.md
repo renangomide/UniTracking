@@ -73,13 +73,14 @@ Com o ambiente virtual ativo, instale as dependências do Flask utilizando o pip
 ```bash
 pip install -r requirements.txt
 ```
-Rodar o servidor Flask
-Após instalar as dependências, inicie o servidor Flask com o comando:
-
 ```bash
-flask run
+python
+from app import db
+db.create_all()
+CTRL+Z
+ENTER
+python.\app.py
 ```
-O servidor Flask rodará em http://localhost:5000.
 
 ### 5. Acessar a Aplicação
 Com ambos os servidores (front-end e back-end) rodando, acesse o projeto através do navegador em http://localhost:3000.
