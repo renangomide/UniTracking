@@ -85,13 +85,22 @@ O servidor Flask rodará em http://localhost:5000.
 Com ambos os servidores (front-end e back-end) rodando, acesse o projeto através do navegador em http://localhost:3000.
 
 Comandos Úteis:
+
 -npm run dev / yarn dev: Inicia o servidor de desenvolvimento do Next.js.
+
 -flask run: Inicia o servidor do Flask.
+
 -npm install / yarn install: Instala as dependências do Node.js.
+
 -pip install -r requirements.txt: Instala as dependências do Python.
+
 Tecnologias Utilizadas:
+
 -Next.js para o front-end.
+
 -Flask para o back-end.
+
 -TypeScript para o front-end.
+
 -Python no back-end.
 
