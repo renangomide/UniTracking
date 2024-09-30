@@ -82,8 +82,6 @@ ENTER
 python.\app.py
 ```
 
-### 5. Acessar a Aplicação
-Com ambos os servidores (front-end e back-end) rodando, acesse o projeto através do navegador em http://localhost:3000.
 
 ## Comandos Úteis:
 
