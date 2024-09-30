@@ -1,36 +1,55 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Nome do Projeto
 
-## Getting Started
+Este projeto é um sistema de controle de faltas desenvolvido com Next.js no front-end e Flask no back-end. Ele permite que professores registrem as faltas dos alunos e os alunos possam visualizar e contestar essas faltas.
 
-First, run the development server:
+## Pré-requisitos
+
+Para rodar este projeto localmente, você precisará ter instalado:
+
+- **Git** - Para clonar o repositório.
+- **Node.js** - Para rodar o front-end (Next.js).
+- **Python** - Para rodar o back-end (Flask).
+- **npm** ou **yarn** - Para gerenciar os pacotes do Node.js.
+- **pip** - Para instalar os pacotes do Python.
+
+## Como rodar o projeto
+
+Siga os passos abaixo para clonar e rodar o projeto na sua máquina:
+
+### 1. Clonar o repositório
+
+Abra o terminal e digite o seguinte comando para clonar o repositório:
+
+```bash
+git clone https://github.com/renangomide/UniTracking.git
+```
+2. Navegar para a pasta do projeto
+Entre na pasta do projeto que foi clonada com o seguinte comando:
+
+```bash
+cd repo-do-projeto
+```
+3. Configuração do Front-end
+Instalar as dependências
+Na pasta raiz do projeto, execute o seguinte comando para instalar as dependências do front-end:
+
+```bash
+npm install
+
+// Se preferir usar yarn
+
+yarn install
+```
+Rodar o servidor de desenvolvimento do Next.js
+Após instalar as dependências, inicie o servidor de desenvolvimento do Next.js com o comando:
 
 ```bash
 npm run dev
-# or
+
+// ou com yarn
+
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+O projeto será executado em modo de desenvolvimento. Abra o navegador e acesse http://localhost:3000 para visualizar a aplicação.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
